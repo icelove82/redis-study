@@ -1,0 +1,23 @@
+# Use on redis-cli
+
+01. redis-cli
+
+02. SET name ymh
+
+03. GET name
+
+04. SET age 39
+
+05. GET age
+
+06. EXISTS name
+
+07. KEYS *
+
+08. FLUSHALL
+
+09. expire name 30
+
+10. ttl name
+
+11. SETEX name 30 ymh
