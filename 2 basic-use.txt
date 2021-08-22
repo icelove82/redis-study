@@ -1,23 +1,55 @@
 # Use on redis-cli
 
+# jump into redis
 01. redis-cli
 
+# add a key-value set
 02. SET name ymh
 
+# get a value by key
 03. GET name
 
+# add a key-value set
 04. SET age 39
 
+# get a value by key
 05. GET age
 
+# check by key
 06. EXISTS name
 
+# show all key
 07. KEYS *
 
+# clear all
 08. FLUSHALL
 
+# set expire time to a key-value
 09. expire name 30
 
+# show expire time
 10. ttl name
 
+# set a key-value set with expire time
 11. SETEX name 30 ymh
+
+# add a key-list
+lpush friends john      # from left
+rpush friends bob       # from right
+
+# show all key-list
+lrange friends 0 -1
+
+# remove a value from list
+lpop friends            # from left
+rpop friends            # from right
+
+# add a key-sets
+sadd hobbies "weight lifting"   # add 1 member
+sadd hobbies weight lifting     # add 2 member
+
+# show all values in sets
+smembers hobbies
+
+# remove the value from sets
+srem hobbies football
