@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "express": "npm:undefined@*",
+    "redis": "^3.1.2"
+  }
+}
