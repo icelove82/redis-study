@@ -1,0 +1,17 @@
+# Use on redis-cli
+
+# set a hash by key field value
+hset person name ymh
+hset person age 39
+
+# get a hash value by key field
+hget person name
+
+# get all hash value by key
+hgetall person
+
+# remove a field-value
+hdel person name
+
+# check a field-value
+hexists person name
